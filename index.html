@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel South Africa Now</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffcc00;
+            color: #006600;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            height: 50px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 20px;
+            background-color: #e0ffd8;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .accordion {
+            margin-bottom: 20px;
+        }
+        .accordion-item {
+            margin-bottom: 10px;
+            border: 1px solid #006600;
+            border-radius: 5px;
+        }
+        .accordion-header {
+            background-color: #ffcc00;
+            color: #006600;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .accordion-body {
+            display: none;
+            padding: 10px;
+            background-color: #fff;
+            border-top: 1px solid #006600;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .link {
+            color: #006600;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function toggleAccordion(id) {
+            const body = document.getElementById(id);
+            body.style.display = body.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="https://via.placeholder.com/50" alt="South Africa Flag">
+        <h1>Travel South Africa Now</h1>
+    </header>
+    <div class="container">
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('attraction1')">Table Mountain</div>
+                <div class="accordion-body" id="attraction1">
+                    <p>Table Mountain is one of the most iconic landmarks in South Africa, offering breathtaking views of Cape Town and its surroundings.</p>
+                    <img src="https://via.placeholder.com/400" alt="Table Mountain">
+                    <p><a href="https://example.com" class="link" download>Check availability</a></p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('attraction2')">Kruger National Park</div>
+                <div class="accordion-body" id="attraction2">
+                    <p>Kruger National Park is one of Africa's largest game reserves, home to a wide variety of wildlife including the Big Five.</p>
+                    <img src="https://via.placeholder.com/400" alt="Kruger National Park">
+                    <p><a href="https://example.com" class="link" download>Check availability</a></p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('attraction3')">Robben Island</div>
+                <div class="accordion-body" id="attraction3">
+                    <p>Robben Island is a UNESCO World Heritage Site, famous for being the prison where Nelson Mandela was held for 18 years.</p>
+                    <img src="https://via.placeholder.com/400" alt="Robben Island">
+                    <p><a href="https://example.com" class="link" download>Check availability</a></p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('attraction4')">Cape Winelands</div>
+                <div class="accordion-body" id="attraction4">
+                    <p>The Cape Winelands is a picturesque region known for its vineyards, charming towns, and world-class wine tasting experiences.</p>
+                    <img src="https://via.placeholder.com/400" alt="Cape Winelands">
+                    <p><a href="https://example.com" class="link" download>Check availability</a></p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('attraction5')">Blyde River Canyon</div>
+                <div class="accordion-body" id="attraction5">
+                    <p>Blyde River Canyon is the third largest canyon in the world, offering spectacular views and hiking opportunities.</p>
+                    <img src="https://via.placeholder.com/400" alt="Blyde River Canyon">
+                    <p><a href="https://example.com" class="link" download>Check availability</a></p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('attraction6')">Addo Elephant National Park</div>
+                <div class="accordion-body" id="attraction6">
+                    <p>Addo Elephant National Park is a sanctuary for over 600 elephants and other diverse wildlife, perfect for a safari experience.</p>
+                    <img src="https://via.placeholder.com/400" alt="Addo Elephant National Park">
+                    <p><a href="https://example.com" class="link" download>Check availability</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
